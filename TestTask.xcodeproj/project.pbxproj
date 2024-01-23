@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		2D1D12B42B5BD37A00B58087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1D12B32B5BD37A00B58087 /* AppDelegate.swift */; };
 		2D1D12B62B5BD37A00B58087 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1D12B52B5BD37A00B58087 /* SceneDelegate.swift */; };
-		2D1D12B82B5BD37A00B58087 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1D12B72B5BD37A00B58087 /* ViewController.swift */; };
-		2D1D12BB2B5BD37A00B58087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1D12B92B5BD37A00B58087 /* Main.storyboard */; };
+		2D1D12B82B5BD37A00B58087 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1D12B72B5BD37A00B58087 /* AuthorizationViewController.swift */; };
 		2D1D12BD2B5BD37C00B58087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1D12BC2B5BD37C00B58087 /* Assets.xcassets */; };
 		2D1D12C02B5BD37C00B58087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1D12BE2B5BD37C00B58087 /* LaunchScreen.storyboard */; };
+		2D1D12C82B5BD6AC00B58087 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1D12C72B5BD6AC00B58087 /* Country.swift */; };
+		2D1D12D02B5BD7F700B58087 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1D12CF2B5BD7F700B58087 /* NetworkService.swift */; };
+		2D9BCB6A2B5BD9E700ACB1C1 /* PhoneInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9BCB692B5BD9E700ACB1C1 /* PhoneInputViewController.swift */; };
+		2D9BCB6C2B5BDA1200ACB1C1 /* CountrySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9BCB6B2B5BDA1200ACB1C1 /* CountrySelectViewController.swift */; };
+		2DEBF1B32B5D3CD90097308F /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBF1B22B5D3CD90097308F /* CustomLabel.swift */; };
+		2DEBF1B52B5D3CE80097308F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBF1B42B5D3CE80097308F /* CustomButton.swift */; };
+		2DEBF1B82B5FF9040097308F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBF1B72B5FF9040097308F /* CustomTextField.swift */; };
+		2DEBF1BA2B6022900097308F /* Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBF1B92B60228F0097308F /* Validate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D1D12B02B5BD37A00B58087 /* TestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1D12B32B5BD37A00B58087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D1D12B52B5BD37A00B58087 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2D1D12B72B5BD37A00B58087 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2D1D12BA2B5BD37A00B58087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D1D12B72B5BD37A00B58087 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		2D1D12BC2B5BD37C00B58087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D1D12BF2B5BD37C00B58087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D1D12C12B5BD37C00B58087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D1D12C72B5BD6AC00B58087 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		2D1D12CF2B5BD7F700B58087 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2D9BCB692B5BD9E700ACB1C1 /* PhoneInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInputViewController.swift; sourceTree = "<group>"; };
+		2D9BCB6B2B5BDA1200ACB1C1 /* CountrySelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectViewController.swift; sourceTree = "<group>"; };
+		2DEBF1B22B5D3CD90097308F /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		2DEBF1B42B5D3CE80097308F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		2DEBF1B72B5FF9040097308F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		2DEBF1B92B60228F0097308F /* Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,78 @@
 		2D1D12B22B5BD37A00B58087 /* TestTask */ = {
 			isa = PBXGroup;
 			children = (
-				2D1D12B32B5BD37A00B58087 /* AppDelegate.swift */,
-				2D1D12B52B5BD37A00B58087 /* SceneDelegate.swift */,
-				2D1D12B72B5BD37A00B58087 /* ViewController.swift */,
-				2D1D12B92B5BD37A00B58087 /* Main.storyboard */,
-				2D1D12BC2B5BD37C00B58087 /* Assets.xcassets */,
-				2D1D12BE2B5BD37C00B58087 /* LaunchScreen.storyboard */,
-				2D1D12C12B5BD37C00B58087 /* Info.plist */,
+				2D1D12CA2B5BD6E200B58087 /* App */,
+				2D1D12CC2B5BD70B00B58087 /* Resources */,
+				2D1D12CD2B5BD72400B58087 /* StoryBoards */,
+				2D1D12CB2B5BD6F000B58087 /* ViewControllers */,
+				2DEBF1B62B5E88DB0097308F /* Custom */,
+				2D1D12CE2B5BD77200B58087 /* Networking */,
+				2D1D12C92B5BD6B100B58087 /* Model */,
 			);
 			path = TestTask;
+			sourceTree = "<group>";
+		};
+		2D1D12C92B5BD6B100B58087 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D1D12C72B5BD6AC00B58087 /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2D1D12CA2B5BD6E200B58087 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2D1D12B32B5BD37A00B58087 /* AppDelegate.swift */,
+				2DEBF1B92B60228F0097308F /* Validate.swift */,
+				2D1D12B52B5BD37A00B58087 /* SceneDelegate.swift */,
+				2D1D12C12B5BD37C00B58087 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2D1D12CB2B5BD6F000B58087 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D1D12B72B5BD37A00B58087 /* AuthorizationViewController.swift */,
+				2D9BCB692B5BD9E700ACB1C1 /* PhoneInputViewController.swift */,
+				2D9BCB6B2B5BDA1200ACB1C1 /* CountrySelectViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2D1D12CC2B5BD70B00B58087 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D1D12BC2B5BD37C00B58087 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2D1D12CD2B5BD72400B58087 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				2D1D12BE2B5BD37C00B58087 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		2D1D12CE2B5BD77200B58087 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2D1D12CF2B5BD7F700B58087 /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2DEBF1B62B5E88DB0097308F /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				2DEBF1B22B5D3CD90097308F /* CustomLabel.swift */,
+				2DEBF1B42B5D3CE80097308F /* CustomButton.swift */,
+				2DEBF1B72B5FF9040097308F /* CustomTextField.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +204,6 @@
 			files = (
 				2D1D12C02B5BD37C00B58087 /* LaunchScreen.storyboard in Resources */,
 				2D1D12BD2B5BD37C00B58087 /* Assets.xcassets in Resources */,
-				2D1D12BB2B5BD37A00B58087 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +214,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D1D12B82B5BD37A00B58087 /* ViewController.swift in Sources */,
+				2DEBF1BA2B6022900097308F /* Validate.swift in Sources */,
+				2D1D12D02B5BD7F700B58087 /* NetworkService.swift in Sources */,
+				2D9BCB6C2B5BDA1200ACB1C1 /* CountrySelectViewController.swift in Sources */,
+				2DEBF1B52B5D3CE80097308F /* CustomButton.swift in Sources */,
+				2D1D12C82B5BD6AC00B58087 /* Country.swift in Sources */,
+				2DEBF1B82B5FF9040097308F /* CustomTextField.swift in Sources */,
+				2D9BCB6A2B5BD9E700ACB1C1 /* PhoneInputViewController.swift in Sources */,
+				2D1D12B82B5BD37A00B58087 /* AuthorizationViewController.swift in Sources */,
 				2D1D12B42B5BD37A00B58087 /* AppDelegate.swift in Sources */,
 				2D1D12B62B5BD37A00B58087 /* SceneDelegate.swift in Sources */,
+				2DEBF1B32B5D3CD90097308F /* CustomLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2D1D12B92B5BD37A00B58087 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D1D12BA2B5BD37A00B58087 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2D1D12BE2B5BD37C00B58087 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,12 +370,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9YZ66R8B68;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestTask/Info.plist;
+				INFOPLIST_FILE = TestTask/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +383,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MaksGridenko.TestTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,12 +401,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9YZ66R8B68;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestTask/Info.plist;
+				INFOPLIST_FILE = TestTask/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +414,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MaksGridenko.TestTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
