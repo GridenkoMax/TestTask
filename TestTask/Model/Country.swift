@@ -16,6 +16,11 @@ struct Country: Codable {
     var phoneMasks: [String]
 }
 
-struct CountriesResponse: Codable {
+struct Result: Codable {
     var data: [Country]
 }
+
+struct CountriesResponse: Codable {
+    var result: Result
+}
+

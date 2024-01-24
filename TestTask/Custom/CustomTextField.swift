@@ -42,7 +42,7 @@ final class CustomTextField: UITextField {
         
         layer.cornerRadius = 15
         layer.borderColor = UIColor.white.cgColor
-        layer.borderWidth = 0.5
+        layer.borderWidth = 0.8
         layer.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
         keyboardType = .phonePad
         

@@ -20,8 +20,15 @@ final class PhoneInputViewController: UIViewController{
     private let phoneNumber = CustomTextField(placeholder: "Номер телефона")
     private let nextButton = CustomButton(title:"Next", backgroundColor: .gray, isEnabled: false)
     
+    private let dataEncryption = CustomLabel(
+        title: "Ваши данные будут надежно защищены и не будут публичными, если вы не захотите сделать их таковыми вручную в настройках приватности",
+        font: .systemFont(ofSize: 12),
+        color: .gray)
+    
     
     private let numberContainer = UIStackView()
+    private var dataEncryptionContainer = UIStackView()
+    private var lockImageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +36,7 @@ final class PhoneInputViewController: UIViewController{
         
     }
     //MARK: - Actions
-
+    
     @objc
     private func showCountrySelectViewController(){
         let countrySelectVC = CountrySelectViewController()
@@ -47,6 +54,8 @@ private extension PhoneInputViewController{
         addActions()
         addSubviews()
         setupLayout()
+        setupLockImage()
+        setupDataEncryptionContainer()
         setupNumberContainer()
         setupGestureToHideKeyboard()
         phoneNumber.addTarget(self, action: #selector(phoneNumberChanged), for: .editingChanged)
@@ -61,6 +70,9 @@ private extension PhoneInputViewController{
         view.addSubview(phoneNumber)
         view.addSubview(nextButton)
         view.addSubview(numberContainer)
+        view.addSubview(lockImageView)
+        view.addSubview(dataEncryption)
+        view.addSubview(dataEncryptionContainer)
     }
     func setupNumberContainer(){
         numberContainer.axis = .vertical
@@ -68,11 +80,20 @@ private extension PhoneInputViewController{
         numberContainer.addArrangedSubview(enterNumber)
         numberContainer.addArrangedSubview(phoneNumber)
         numberContainer.addArrangedSubview(yourNumberIsActive)
+        
     }
+    func setupDataEncryptionContainer(){
+        dataEncryptionContainer.axis = .horizontal
+        dataEncryptionContainer.spacing = 15
+        dataEncryptionContainer.addArrangedSubview(lockImageView)
+        dataEncryptionContainer.addArrangedSubview(dataEncryption)
+
+    }
+    
     func addActions(){
         nextButton.addTarget(self,
-                                      action: #selector(showCountrySelectViewController),
-                                      for: .touchUpInside)
+                             action: #selector(showCountrySelectViewController),
+                             for: .touchUpInside)
     }
     func setupGestureToHideKeyboard() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
@@ -87,6 +108,12 @@ private extension PhoneInputViewController{
             nextButton.backgroundColor = .gray
         }
     }
+    func setupLockImage(){
+        lockImageView = UIImageView(image: UIImage(systemName: "lock"))
+        lockImageView.contentMode = .scaleAspectFit
+        lockImageView.tintColor = .gray
+        
+    }
 }
 
 
@@ -97,7 +124,9 @@ private extension PhoneInputViewController{
          yourNumberIsActive,
          phoneNumber,
          nextButton,
-         numberContainer].forEach{$0.translatesAutoresizingMaskIntoConstraints = false}
+         numberContainer,
+         lockImageView,
+         dataEncryptionContainer].forEach{$0.translatesAutoresizingMaskIntoConstraints = false}
         NSLayoutConstraint.activate([
             
             numberContainer.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
@@ -106,10 +135,16 @@ private extension PhoneInputViewController{
             
             phoneNumber.heightAnchor.constraint(equalToConstant: 50),
             
+            dataEncryption.bottomAnchor.constraint(equalTo: nextButton.topAnchor, constant: -16),
+            
+            dataEncryption.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+            dataEncryption.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
+            
+            
             nextButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             nextButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             nextButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
-            nextButton.heightAnchor.constraint(equalToConstant: 50) // Устанавливаем высоту кнопки, если необходимо
+            nextButton.heightAnchor.constraint(equalToConstant: 50)
             
         ])
     }
