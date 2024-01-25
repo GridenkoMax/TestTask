@@ -23,7 +23,7 @@ final class CustomButton: UIButton {
                         backgroundColor: backgroundColor,
                         titleColor:  titleColor,
                         isEnabled: isEnabled
-        
+                        
         )
         
     }
@@ -37,7 +37,7 @@ final class CustomButton: UIButton {
                                  titleColor: UIColor = .white,
                                  isEnabled: Bool
     ){
-       
+        
         setTitle(title, for: .normal)
         setTitleColor(titleColor, for: .normal)
         titleLabel?.font = font

@@ -16,6 +16,7 @@
 		2D1D12D02B5BD7F700B58087 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1D12CF2B5BD7F700B58087 /* NetworkService.swift */; };
 		2D5F5B992B61123F00FBFF26 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5F5B982B61123F00FBFF26 /* NetworkError.swift */; };
 		2D5F5B9B2B61130C00FBFF26 /* URLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5F5B9A2B61130C00FBFF26 /* URLManager.swift */; };
+		2D5F5B9D2B6265A400FBFF26 /* CoustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5F5B9C2B6265A400FBFF26 /* CoustomTableViewCell.swift */; };
 		2D9BCB6A2B5BD9E700ACB1C1 /* PhoneInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9BCB692B5BD9E700ACB1C1 /* PhoneInputViewController.swift */; };
 		2D9BCB6C2B5BDA1200ACB1C1 /* CountrySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9BCB6B2B5BDA1200ACB1C1 /* CountrySelectViewController.swift */; };
 		2DEBF1B32B5D3CD90097308F /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBF1B22B5D3CD90097308F /* CustomLabel.swift */; };
@@ -36,6 +37,7 @@
 		2D1D12CF2B5BD7F700B58087 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		2D5F5B982B61123F00FBFF26 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		2D5F5B9A2B61130C00FBFF26 /* URLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLManager.swift; sourceTree = "<group>"; };
+		2D5F5B9C2B6265A400FBFF26 /* CoustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoustomTableViewCell.swift; sourceTree = "<group>"; };
 		2D9BCB692B5BD9E700ACB1C1 /* PhoneInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInputViewController.swift; sourceTree = "<group>"; };
 		2D9BCB6B2B5BDA1200ACB1C1 /* CountrySelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectViewController.swift; sourceTree = "<group>"; };
 		2DEBF1B22B5D3CD90097308F /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				2DEBF1B22B5D3CD90097308F /* CustomLabel.swift */,
 				2DEBF1B42B5D3CE80097308F /* CustomButton.swift */,
 				2DEBF1B72B5FF9040097308F /* CustomTextField.swift */,
+				2D5F5B9C2B6265A400FBFF26 /* CoustomTableViewCell.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				2D1D12C82B5BD6AC00B58087 /* Country.swift in Sources */,
 				2DEBF1B82B5FF9040097308F /* CustomTextField.swift in Sources */,
 				2D9BCB6A2B5BD9E700ACB1C1 /* PhoneInputViewController.swift in Sources */,
+				2D5F5B9D2B6265A400FBFF26 /* CoustomTableViewCell.swift in Sources */,
 				2D1D12B82B5BD37A00B58087 /* AuthorizationViewController.swift in Sources */,
 				2D1D12B42B5BD37A00B58087 /* AppDelegate.swift in Sources */,
 				2D5F5B992B61123F00FBFF26 /* NetworkError.swift in Sources */,

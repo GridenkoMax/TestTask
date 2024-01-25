@@ -84,7 +84,7 @@ private extension AuthorizationViewController{
         registrationContainer.addArrangedSubview(registrationButton)
     }
     func setupLogoImage(){ // изменить на контейнер?
-        appleLogoImage.image = UIImage(named: "apple")
+        appleLogoImage.image = UIImage(named: "apple1")
         appleLogoImage.contentMode = .scaleAspectFit
         appleLogoImage.layer.cornerRadius = 20
         appleLogoImage.clipsToBounds = true

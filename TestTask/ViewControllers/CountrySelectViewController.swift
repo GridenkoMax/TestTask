@@ -8,10 +8,10 @@
 import Foundation
 import UIKit
 
-final class CountrySelectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-    
+final class CountrySelectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate{
     
     //MARK: - Private property
+    private var filteredCountries = [Country]()
     private var countries = [Country]()
     private var tableView: UITableView!
     
@@ -29,19 +29,28 @@ final class CountrySelectViewController: UIViewController, UITableViewDelegate, 
     
     //MARK: - Table View methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return countries.count
+        return filteredCountries.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = UIColor.clear
-        cell.textLabel?.textColor = UIColor.white
-        let country = countries[indexPath.row]
-        cell.textLabel?.text = country.title
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CountryCell", for: indexPath) as? CountryTableViewCell else {
+            return UITableViewCell()
+        }
+        let country = filteredCountries[indexPath.row]
+        cell.configureWith(country: country)
         return cell
+        
+    }
+    // MARK: - UITextFieldDelegate
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        if let searchText = textField.text, !searchText.isEmpty {
+            filteredCountries = countries.filter { $0.title.lowercased().contains(searchText.lowercased()) }
+        } else {
+            filteredCountries = countries
+        }
+        tableView.reloadData()
     }
 }
-
 
 
 
@@ -49,6 +58,7 @@ final class CountrySelectViewController: UIViewController, UITableViewDelegate, 
 private extension CountrySelectViewController{
     func setupView(){
         view.backgroundColor = #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1)
+        countrySearch.delegate = self
         setupCountryContainer()
         setupTableView()
         loadCountries()
@@ -56,8 +66,6 @@ private extension CountrySelectViewController{
         setupLayout()
     }
 }
-
-
 
 // MARK: - Setting
 private extension CountrySelectViewController{
@@ -70,12 +78,12 @@ private extension CountrySelectViewController{
         countryContainer.addArrangedSubview(countryLabel)
         countryContainer.addArrangedSubview(countrySearch)
     }
-
+    
     func setupTableView() {
         tableView = UITableView()
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(CountryTableViewCell.self, forCellReuseIdentifier: "CountryCell")
         tableView.backgroundColor = UIColor.clear
         view.addSubview(tableView)
     }
@@ -83,7 +91,10 @@ private extension CountrySelectViewController{
         Task {
             do {
                 self.countries = try await NetworkService.shared.getCountries()
-                self.tableView.reloadData()
+                self.filteredCountries = self.countries
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             } catch {
                 print(error)
             }

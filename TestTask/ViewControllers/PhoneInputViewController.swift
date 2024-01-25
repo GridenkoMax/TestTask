@@ -87,7 +87,7 @@ private extension PhoneInputViewController{
         dataEncryptionContainer.spacing = 15
         dataEncryptionContainer.addArrangedSubview(lockImageView)
         dataEncryptionContainer.addArrangedSubview(dataEncryption)
-
+        
     }
     
     func addActions(){

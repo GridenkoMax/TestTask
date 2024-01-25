@@ -8,10 +8,10 @@
 import Foundation
 
 struct Validate {
-
+    
     static func isValidPhoneNumber(_ number: String) -> Bool {
-            let allowedCharacterSet = CharacterSet.decimalDigits
-            let characterSet = CharacterSet(charactersIn: number)
-            return allowedCharacterSet.isSuperset(of: characterSet) && number.count >= 9 && number.count <= 15
-        }
+        let allowedCharacterSet = CharacterSet.decimalDigits
+        let characterSet = CharacterSet(charactersIn: number)
+        return allowedCharacterSet.isSuperset(of: characterSet) && number.count >= 9 && number.count <= 15
     }
+}
